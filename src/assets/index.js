@@ -49,6 +49,7 @@ export {
   postMan,
   mongodb,
   nodejs,
+  github,
   reactjs,
   vue,
   redux,
