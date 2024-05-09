@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import vue from './tech/vue.png'
+import postMan from './tech/postman.png'
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -36,7 +38,6 @@ export {
   creator,
   mobile,
   web,
-  github,
   menu,
   close,
   css,
@@ -45,9 +46,11 @@ export {
   git,
   html,
   javascript,
+  postMan,
   mongodb,
   nodejs,
   reactjs,
+  vue,
   redux,
   tailwind,
   typescript,
