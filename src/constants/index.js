@@ -17,11 +17,11 @@ import {
   figma,
   docker,
   postMan,
-  TingGlobal,
-  RoadProtect,
-  PacMan,
-  TicTacToe,
-  Ecommerce,
+  tingGlobal,
+  roadProtect,
+  pacMan,
+  ticTacToe,
+  ecommerce,
   sharonGalOr
 } from "../assets";
 
@@ -119,7 +119,7 @@ const experiences = [
   {
     title: "Angular Developer",
     company_name: "Road Protect ",
-    icon: RoadProtect,
+    icon: roadProtect,
     iconBg: "#383E56",
     date: "Sep 2023 - Nov 2023",
     points: 
@@ -133,7 +133,7 @@ const experiences = [
   {
     title: "Vue Developer",
     company_name: "Ting Global",
-    icon: TingGlobal,
+    icon: tingGlobal,
     iconBg: "#E6DEDD",
     date: "Nov 2023 - 2024",
     points: 
@@ -168,7 +168,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: Ecommerce,
+    image: ecommerce,
     source_code_link: "https://github.com/",
   },
   {
@@ -189,7 +189,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: TicTacToe,
+    image: ticTacToe,
     source_code_link: "https://github.com/",
   },
   {
@@ -210,7 +210,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: PacMan,
+    image: pacMan,
     source_code_link: "https://github.com/",
   },
 ];

@@ -1,9 +1,3 @@
-const TingGlobal = `${import.meta.env.VITE_S3_CLOUD_URL}images/Ting-Global.png`;
-const RoadProtect = `${import.meta.env.VITE_S3_CLOUD_URL}images/Road-Protect.jpeg`;
-const PacMan = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/PacMan-Game.png`;
-const TicTacToe = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/Tic-Tac-Toe.png`;
-const Ecommerce = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/Landing-Page--Navbar.png`;
-
 import logo from "./logo.svg";
 import sharonGalOr from './sharon-gal-or.png'
 import backend from "./backend.png";
@@ -28,6 +22,13 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import typescript from "./tech/typescript.png";
 
+import tingGlobal from './Ting-Global.png'
+import roadProtect from './Road-Protect.jpeg'
+import ticTacToe from './Tic-Tac-Toe.png'
+import pacMan from './pacMan-Game.png'
+import ecommerce from './Landing-Page--Navbar.png'
+
+
 export {
   logo,
   backend,
@@ -50,10 +51,10 @@ export {
   vue,
   redux,
   typescript,
-  TingGlobal,
-  RoadProtect,
-  PacMan,
-  TicTacToe,
-  Ecommerce,
+  tingGlobal,
+  roadProtect,
+  pacMan,
+  ticTacToe,
+  ecommerce,
   sharonGalOr
 };
