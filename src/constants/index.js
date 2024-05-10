@@ -149,6 +149,9 @@ const experiences = [
   },
 ];
 
+console.log(pacMan);
+console.log(tingGlobal);
+
 const projects = [
   {
     name: "Landing Page",

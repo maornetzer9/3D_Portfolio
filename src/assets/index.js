@@ -25,7 +25,7 @@ import typescript from "./tech/typescript.png";
 import tingGlobal from './Ting-Global.png'
 import roadProtect from './Road-Protect.jpeg'
 import ticTacToe from './Tic-Tac-Toe.png'
-import pacMan from './pacMan-Game.png'
+import pacMan from './PacMan-Game.png'
 import ecommerce from './Landing-Page--Navbar.png'
 
 
