@@ -1,4 +1,11 @@
+const TingGlobal = `${import.meta.env.VITE_S3_CLOUD_URL}images/Ting-Global.png`;
+const RoadProtect = `${import.meta.env.VITE_S3_CLOUD_URL}images/Road-Protect.jpeg`;
+const PacMan = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/PacMan-Game.png`;
+const TicTacToe = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/Tic-Tac-Toe.png`;
+const Ecommerce = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/Landing-Page--Navbar.png`;
+
 import logo from "./logo.svg";
+import sharonGalOr from './sharon-gal-or.png'
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,18 +26,7 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 export {
   logo,
@@ -53,14 +49,11 @@ export {
   reactjs,
   vue,
   redux,
-  tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  TingGlobal,
+  RoadProtect,
+  PacMan,
+  TicTacToe,
+  Ecommerce,
+  sharonGalOr
 };

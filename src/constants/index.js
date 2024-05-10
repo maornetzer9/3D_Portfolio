@@ -1,8 +1,3 @@
-const TingGlobal = `${import.meta.env.VITE_S3_CLOUD_URL}images/Ting-Global.png`;
-const RoadProtect = `${import.meta.env.VITE_S3_CLOUD_URL}images/Road-Protect.jpeg`;
-const PacMan = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/PacMan-Game.png`;
-const TicTacToe = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/Tic-Tac-Toe.png`;
-const Ecommerce = `${import.meta.env.VITE_S3_CLOUD_URL}images/gallery/fulls/Landing-Page--Navbar.png`;
 
 import {
   mobile,
@@ -15,22 +10,19 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
   vue,
   nodejs,
   mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   postMan,
+  TingGlobal,
+  RoadProtect,
+  PacMan,
+  TicTacToe,
+  Ecommerce,
+  sharonGalOr
 } from "../assets";
 
 
@@ -109,18 +101,14 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-//   {
-    // name: "Three JS",
-    // icon: threejs,
-//   },
   {
     name: "git",
     icon: git,
   },
-//   {
-    // name: "figma",
-    // icon: figma,
-//   },
+  {
+    name: "figma",
+    icon: figma,
+  },
   {
     name: "docker",
     icon: docker,
@@ -228,22 +216,6 @@ const projects = [
 ];
 
 const testimonials = [
-    //   {
-    //     testimonial:
-    //       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    //     name: "Sara Lee",
-    //     designation: "CFO",
-    //     company: "Acme Co",
-    //     image: "https://randomuser.me/api/portraits/women/4.jpg",
-    //   },
-    //   {
-    //     testimonial:
-    //       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    //     name: "Chris Brown",
-    //     designation: "COO",
-    //     company: "DEF Corp",
-    //     image: "https://randomuser.me/api/portraits/men/5.jpg",
-    //   },
       {
         testimonial: "I am happy to recommend Maor Netzer for any technical position, after his exceptional specialization at Ting Global. Maor quickly mastered Vue.js, Nuxt.js and AWS, significantly improving our web projects and cloud capabilities. His initiative in system development and server automation tools has significantly improved our operational efficiency.Moreover, Maor excelled in collaboration and team management, and brought a positive spirit and an innovative approach to our work environment. His ability to blend technical skills with strong interpersonal qualities has made him a valuable asset to our team.In conclusion, Maor is a dedicated, technically skilled and versatile team player. His contribution to our company has been significant, and I am confident that he will bring the same level of excellence and innovation to his future endeavors.For more information, please do not hesitate to contact me. Best regards, Sharon Gal-Or Director of Ting Global",
         phone: '055-9721123',
@@ -251,8 +223,8 @@ const testimonials = [
         name: "Sharon Gal-or",
         designation: "Director",
         company: "Ting Global",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+        image: sharonGalOr,
       },
-    ];
+];
     
 export { services, technologies, experiences, testimonials, projects };
