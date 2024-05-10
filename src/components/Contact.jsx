@@ -29,6 +29,9 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!form.email || !form.name || !form.message) return alert('One of the fields are missing...')
+
     setLoading(true);
 
     emailjs
