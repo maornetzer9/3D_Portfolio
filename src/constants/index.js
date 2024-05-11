@@ -19,10 +19,11 @@ import {
   postMan,
   tingGlobal,
   roadProtect,
-  pacMan,
+//   pacMan,
   ticTacToe,
   ecommerce,
-  sharonGalOr
+  sharonGalOr,
+  AIShirtModel
 } from "../assets";
 
 
@@ -149,9 +150,6 @@ const experiences = [
   },
 ];
 
-console.log(pacMan);
-console.log(tingGlobal);
-
 const projects = [
   {
     name: "Landing Page",
@@ -177,7 +175,7 @@ const projects = [
   {
     name: "Tic Tac Toe",
     description:
-      "I engineered a web-based version of Tic-Tac-Toe, bringing a fresh twist to the timeless game with interactive features and a user-friendly interface. This project serves as a showcase of my full-stack development skills, focusing on creating an engaging user experience backed by a reliable server-side logic.",
+      "I developed a web-based version of Tic-Tac-Toe, bringing a fresh twist to the timeless game with interactive features and a user-friendly interface. This project serves as a showcase of my full-stack development skills, focusing on creating an engaging user experience backed by a reliable server-side logic.",
     tags: [
       {
         name: "react",
@@ -196,24 +194,24 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Pac-Man",
+    name: "Customize T-Shirt With AI",
     description:
-      "In a demonstration of both frontend and backend capabilities, I developed a modern rendition of the classic arcade game, Pac-Man. This project was designed not only to echo the nostalgic experience of the original game but also to incorporate enhanced features for user engagement and management.",
+    "I developed a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
     tags: [
       {
-        name: "html",
+        name: "react-vite",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: pacMan,
+    image: AIShirtModel,
     source_code_link: "https://github.com/",
   },
 ];
@@ -222,7 +220,7 @@ const testimonials = [
       {
         testimonial: "I am happy to recommend Maor Netzer for any technical position, after his exceptional specialization at Ting Global. Maor quickly mastered Vue.js, Nuxt.js and AWS, significantly improving our web projects and cloud capabilities. His initiative in system development and server automation tools has significantly improved our operational efficiency.Moreover, Maor excelled in collaboration and team management, and brought a positive spirit and an innovative approach to our work environment. His ability to blend technical skills with strong interpersonal qualities has made him a valuable asset to our team.In conclusion, Maor is a dedicated, technically skilled and versatile team player. His contribution to our company has been significant, and I am confident that he will bring the same level of excellence and innovation to his future endeavors.For more information, please do not hesitate to contact me. Best regards, Sharon Gal-Or Director of Ting Global",
         phone: '055-9721123',
-        email : 'galorian1@gmail.com',
+        email: 'galorian1@gmail.com',
         name: "Sharon Gal-or",
         designation: "Director",
         company: "Ting Global",
