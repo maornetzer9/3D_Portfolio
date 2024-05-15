@@ -170,7 +170,7 @@ const projects = [
       },
     ],
     image: ecommerce,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/maornetzer9/E-Commerce.git",
   },
   {
     name: "Tic Tac Toe",
@@ -212,7 +212,7 @@ const projects = [
       },
     ],
     image: AIShirtModel,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/maornetzer9/AI-Customize-T-Shirts-Frontend",
   },
 ];
 
