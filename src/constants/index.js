@@ -33,8 +33,20 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "tech",
+    title: "Tech",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "opinion",
+    title: "Opinion",
   },
   {
     id: "contact",
@@ -171,11 +183,12 @@ const projects = [
     ],
     image: ecommerce,
     source_code_link: "https://github.com/maornetzer9/E-Commerce.git",
+    web_link: "https://maornetzer9.github.io/E-Commerce",
   },
   {
     name: "Tic Tac Toe",
     description:
-      "I developed a web-based version of Tic-Tac-Toe, bringing a fresh twist to the timeless game with interactive features and a user-friendly interface. This project serves as a showcase of my full-stack development skills, focusing on creating an engaging user experience backed by a reliable server-side logic.",
+      "I developed a web-based version of Tic-Tac-Toe, presenting a modern take on this classic game with a sleek, user-friendly interface and interactive features. This project highlights my skills in frontend development, focusing on responsive design and intuitive gameplay that enhances user engagement and showcases my ability to create dynamic web applications.",
     tags: [
       {
         name: "react",
@@ -191,7 +204,8 @@ const projects = [
       },
     ],
     image: ticTacToe,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/maornetzer9/Tic-Tac-Toe.git",
+    web_link: "https://tic-tac-toe-ku96.onrender.com",
   },
   {
     name: "Customize T-Shirt With AI",
@@ -213,6 +227,7 @@ const projects = [
     ],
     image: AIShirtModel,
     source_code_link: "https://github.com/maornetzer9/AI-Customize-T-Shirts-Frontend",
+    web_link: "https://ai-customize-t-shirts-frontend.onrender.com",
   },
 ];
 

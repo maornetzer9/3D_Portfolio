@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { BsBrowserChrome } from "react-icons/bs";
 
 const ProjectCard = ({
   index,
@@ -14,8 +15,13 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  web_link,
   source_code_link,
 }) => {
+
+    const browser = <BsBrowserChrome />
+
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -45,6 +51,16 @@ const ProjectCard = ({
               />
             </div>
           </div>
+
+          <div className='absolute left-3 flex justify-end top-3 card-img_hover'>
+            <div
+              onClick={() => window.open(web_link, "_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <BsBrowserChrome/>
+            </div>
+          </div>
+
         </div>
 
         <div className='mt-5'>
@@ -97,4 +113,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
