@@ -164,7 +164,7 @@ const experiences = [
 
 const projects = [
   {
-    name: "Landing Page",
+    name: "E-commerce",
     description:
       "I developed a dynamic landing page for an E-commerce website aimed at enhancing user engagement and boosting sales. The page serves as the gateway to a rich shopping experience, featuring an intuitive layout, high-performance interactions, and advanced functionalities that streamline the shopping process.",
     tags: [
@@ -183,7 +183,7 @@ const projects = [
     ],
     image: ecommerce,
     source_code_link: "https://github.com/maornetzer9/E-Commerce.git",
-    web_link: "https://maornetzer9.github.io/E-Commerce",
+    // web_link: "https://maornetzer9.github.io/E-Commerce",
   },
   {
     name: "Tic Tac Toe",
@@ -208,7 +208,7 @@ const projects = [
     web_link: "https://tic-tac-toe-ku96.onrender.com",
   },
   {
-    name: "Customize T-Shirt With AI",
+    name: "Customize Shirt With AI",
     description:
     "I developed a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
     tags: [
