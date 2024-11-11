@@ -9,6 +9,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import vue from './tech/vue.png'
 import postMan from './tech/postman.png'
+import manageUserSystem from './Manage-User-System.png';
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -58,5 +59,6 @@ export {
   ticTacToe,
   ecommerce,
   sharonGalOr,
-  AIShirtModel
+  AIShirtModel,
+  manageUserSystem
 };

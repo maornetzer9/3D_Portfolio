@@ -23,7 +23,8 @@ import {
   ticTacToe,
   ecommerce,
   sharonGalOr,
-  AIShirtModel
+  AIShirtModel,
+  manageUserSystem
 } from "../assets";
 
 
@@ -228,6 +229,28 @@ const projects = [
     image: AIShirtModel,
     source_code_link: "https://github.com/maornetzer9/AI-Customize-T-Shirts-Frontend",
     web_link: "https://ai-customize-t-shirts-frontend.onrender.com",
+  },
+  {
+    name: "Manage User System",
+    description:
+    "I developed a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
+    tags: [
+      {
+        name: "react-vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: manageUserSystem,
+    source_code_link: "https://github.com/maornetzer9/Manage-User-System.git",
+    web_link: "https://manage-user-system.onrender.com",
   },
 ];
 

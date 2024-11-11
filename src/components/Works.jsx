@@ -52,14 +52,14 @@ const ProjectCard = ({
             </div>
           </div>
 
-          <div className='absolute left-3 flex justify-end top-3 card-img_hover'>
+          {/* <div className='absolute left-3 flex justify-end top-3 card-img_hover'>
             <div
               onClick={() => window.open(web_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <BsBrowserChrome/>
             </div>
-          </div>
+          </div> */}
 
         </div>
 
