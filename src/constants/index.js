@@ -163,6 +163,7 @@ const experiences = [
   },
 ];
 
+// TODO: Need to edit the Manage User System.
 const projects = [
   {
     name: "E-commerce",
@@ -240,17 +241,47 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "React",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
     image: manageUserSystem,
     source_code_link: "https://github.com/maornetzer9/Manage-User-System.git",
     web_link: "https://manage-user-system.onrender.com",
+  },
+  {
+    name: "Cinema Management System",
+    description:
+    "I developed a web application for managing movies and subscriptions, integrating data from external APIs and MongoDB. Built with React, Redux, and Node.js, it features role-based access control, allowing admins to manage users and permissions, while users can explore, edit, and subscribe to movies. The app ensures real-time updates, a seamless user experience, and secure, dynamic data management.",
+    tags: [
+        {
+            name: "react-vite",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "redux",
+            color: "green-text-gradient",
+          },
+          {
+            name: "node.js",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "mongodb",
+            color: "pink-text-gradient",
+          },
+    ],
+    image: manageUserSystem,
+    source_code_link: "https://github.com/maornetzer9/Movies.git",
+    web_link: "https://movies-jps0.onrender.com/",
   },
 ];
 
