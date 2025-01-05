@@ -24,7 +24,8 @@ import {
   ecommerce,
   sharonGalOr,
   AIShirtModel,
-  manageUserSystem
+  manageUserSystem,
+  CinemaManagementSystem
 } from "../assets";
 
 
@@ -168,7 +169,7 @@ const projects = [
   {
     name: "E-commerce",
     description:
-      "I developed a dynamic landing page for an E-commerce website aimed at enhancing user engagement and boosting sales. The page serves as the gateway to a rich shopping experience, featuring an intuitive layout, high-performance interactions, and advanced functionalities that streamline the shopping process.",
+      "This is a dynamic landing page for an E-commerce website aimed at enhancing user engagement and boosting sales. The page serves as the gateway to a rich shopping experience, featuring an intuitive layout, high-performance interactions, and advanced functionalities that streamline the shopping process.",
     tags: [
       {
         name: "react",
@@ -190,7 +191,7 @@ const projects = [
   {
     name: "Tic Tac Toe",
     description:
-      "I developed a web-based version of Tic-Tac-Toe, presenting a modern take on this classic game with a sleek, user-friendly interface and interactive features. This project highlights my skills in frontend development, focusing on responsive design and intuitive gameplay that enhances user engagement and showcases my ability to create dynamic web applications.",
+      "This web app based on a version of Tic-Tac-Toe, presenting a modern take on this classic game with a sleek, user-friendly interface and interactive features. This project highlights my skills in frontend development, focusing on responsive design and intuitive gameplay that enhances user engagement and showcases my ability to create dynamic web applications.",
     tags: [
       {
         name: "react",
@@ -212,7 +213,7 @@ const projects = [
   {
     name: "Customize Shirt With AI",
     description:
-    "I developed a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
+    "This is a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
     tags: [
       {
         name: "react-vite",
@@ -234,7 +235,7 @@ const projects = [
   {
     name: "Manage User System",
     description:
-    "I developed a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
+    "This is a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
     tags: [
       {
         name: "react-vite",
@@ -248,10 +249,6 @@ const projects = [
         name: "node.js",
         color: "pink-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
     ],
     image: manageUserSystem,
     source_code_link: "https://github.com/maornetzer9/Manage-User-System.git",
@@ -260,7 +257,7 @@ const projects = [
   {
     name: "Cinema Management System",
     description:
-    "I developed a web application for managing movies and subscriptions, integrating data from external APIs and MongoDB. Built with React, Redux, and Node.js, it features role-based access control, allowing admins to manage users and permissions, while users can explore, edit, and subscribe to movies. The app ensures real-time updates, a seamless user experience, and secure, dynamic data management.",
+    "This is a web application for managing movies and subscriptions, integrating external APIs and MongoDB for dynamic data handling. Users can explore and subscribe to movies, while admins manage users and permissions through role-based access. Built with React, Redux, and Node.js, the platform ensures a secure, intuitive, and seamless user experience..",
     tags: [
         {
             name: "react-vite",
@@ -279,7 +276,7 @@ const projects = [
             color: "pink-text-gradient",
           },
     ],
-    image: manageUserSystem,
+    image: CinemaManagementSystem,
     source_code_link: "https://github.com/maornetzer9/Movies.git",
     web_link: "https://movies-jps0.onrender.com/",
   },

@@ -29,6 +29,7 @@ import ticTacToe from './Tic-Tac-Toe.png'
 // import pacMan from './PacMan-Game.png'
 import ecommerce from './Landing-Page--Navbar.png'
 import AIShirtModel from './Customize-Your-Own-Shirt.png'
+import CinemaManagementSystem from './Cinema-Management-System.png'
 
 
 export {
@@ -60,5 +61,6 @@ export {
   ecommerce,
   sharonGalOr,
   AIShirtModel,
-  manageUserSystem
+  manageUserSystem,
+  CinemaManagementSystem
 };
