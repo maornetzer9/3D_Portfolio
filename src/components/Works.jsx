@@ -15,51 +15,57 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  image_alt,
   web_link,
   source_code_link,
 }) => {
 
-    const browser = <BsBrowserChrome />
-
-
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.article className='w-full min-w-0' variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl w-full h-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
             src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            alt={image_alt || `${name} project preview`}
+            loading='lazy'
+            decoding='async'
+            className='w-full h-full object-contain rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+          <div className='absolute right-3 top-3 card-img_hover'>
+            <a
+              href={source_code_link}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={`View ${name} source code on GitHub (opens in a new tab)`}
+              className='black-gradient w-11 h-11 rounded-full flex justify-center items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
             >
               <img
                 src={github}
-                alt='source code'
+                alt=''
                 className='w-1/2 h-1/2 object-contain'
               />
-            </div>
+            </a>
           </div>
 
-          <div className='absolute left-3 flex justify-end top-3 card-img_hover'>
-            <div
-              onClick={() => window.open(web_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+          {web_link && <div className='absolute left-3 flex justify-end top-3 card-img_hover'>
+            <a
+              href={web_link}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label={`Visit ${name} live demo (opens in a new tab)`}
+              className='black-gradient w-11 h-11 rounded-full flex justify-center items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
             >
-              <BsBrowserChrome/>
-            </div>
-          </div>
+              <BsBrowserChrome aria-hidden='true'/>
+            </a>
+          </div>}
 
         </div>
 
@@ -79,7 +85,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </motion.article>
   );
 };
 
@@ -104,9 +110,9 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={project.name} index={index} {...project} />
         ))}
       </div>
     </>

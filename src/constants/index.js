@@ -20,12 +20,10 @@ import {
   tingGlobal,
   roadProtect,
 //   pacMan,
-  ticTacToe,
-  ecommerce,
+  nextMarket,
+  cinemaHub,
   sharonGalOr,
   AIShirtModel,
-  manageUserSystem,
-  CinemaManagementSystem
 } from "../assets";
 
 
@@ -164,51 +162,38 @@ const experiences = [
   },
 ];
 
-// TODO: Need to edit the Manage User System.
 const projects = [
   {
-    name: "E-commerce",
+    name: "Next Market",
     description:
-      "This is a dynamic landing page for an E-commerce website aimed at enhancing user engagement and boosting sales. The page serves as the gateway to a rich shopping experience, featuring an intuitive layout, high-performance interactions, and advanced functionalities that streamline the shopping process.",
+      "A full-stack commerce application with product filtering, favorites, a shopping cart, checkout, and order history. A role-based admin workspace supports catalog management, customer orders, and store statistics.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "redux-toolkit", color: "green-text-gradient" },
+      { name: "material-ui", color: "pink-text-gradient" },
+      { name: "express", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
     ],
-    image: ecommerce,
-    source_code_link: "https://github.com/maornetzer9/E-Commerce.git",
-    // web_link: "https://maornetzer9.github.io/E-Commerce",
+    image: nextMarket,
+    image_alt: "Next Market social preview",
+    source_code_link: "https://github.com/maornetzer9/next-market",
+    web_link: "https://next-market-store.vercel.app",
   },
   {
-    name: "Tic Tac Toe",
+    name: "CinemaHub",
     description:
-      "This web app based on a version of Tic-Tac-Toe, presenting a modern take on this classic game with a sleek, user-friendly interface and interactive features. This project highlights my skills in frontend development, focusing on responsive design and intuitive gameplay that enhances user engagement and showcases my ability to create dynamic web applications.",
+      "A cinema operations workspace for managing movies, members, and subscriptions. Includes JWT sign-in, permission-based access, account administration, and session controls, backed by separate user and catalog APIs.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "redux-toolkit", color: "green-text-gradient" },
+      { name: "material-ui", color: "pink-text-gradient" },
+      { name: "express", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
     ],
-    image: ticTacToe,
-    source_code_link: "https://github.com/maornetzer9/Tic-Tac-Toe.git",
-    web_link: "https://tic-tac-toe-ku96.onrender.com",
+    image: cinemaHub,
+    image_alt: "CinemaHub social preview",
+    source_code_link: "https://github.com/maornetzer9/cinemahub-frontend",
+    web_link: "https://cinemahub-xi3w.onrender.com",
   },
   {
     name: "Customize Shirt With AI",
@@ -232,62 +217,16 @@ const projects = [
     source_code_link: "https://github.com/maornetzer9/AI-Customize-T-Shirts-Frontend",
     web_link: "https://ai-customize-t-shirts-frontend.onrender.com",
   },
-  {
-    name: "Manage User System",
-    description:
-    "This is a web application that enables users to customize T-shirts with unique designs using OpenAI's image generation technology. Users can choose to place a logo or a full-shirt design, applying personal or predefined images. The platform leverages AI to generate and preview designs in real-time, allowing for a personalized and creative user experience.",
-    tags: [
-      {
-        name: "react-vite",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: manageUserSystem,
-    source_code_link: "https://github.com/maornetzer9/Manage-User-System.git",
-    web_link: "https://manage-user-system.onrender.com",
-  },
-  {
-    name: "Cinema Management System",
-    description:
-    "This is a web application for managing movies and subscriptions, integrating external APIs and MongoDB for dynamic data handling. Users can explore and subscribe to movies, while admins manage users and permissions through role-based access. Built with React, Redux, and Node.js, the platform ensures a secure, intuitive, and seamless user experience..",
-    tags: [
-        {
-            name: "react-vite",
-            color: "blue-text-gradient",
-          },
-          {
-            name: "redux",
-            color: "green-text-gradient",
-          },
-          {
-            name: "node.js",
-            color: "pink-text-gradient",
-          },
-          {
-            name: "mongodb",
-            color: "pink-text-gradient",
-          },
-    ],
-    image: CinemaManagementSystem,
-    source_code_link: "https://github.com/maornetzer9/Movies.git",
-    web_link: "https://movies-jps0.onrender.com/",
-  },
 ];
 
 const testimonials = [
       {
-        testimonial: "I am happy to recommend Maor Netzer for any technical position, after his exceptional specialization at Ting Global. Maor quickly mastered Vue.js, Nuxt.js and AWS, significantly improving our web projects and cloud capabilities. His initiative in system development and server automation tools has significantly improved our operational efficiency.Moreover, Maor excelled in collaboration and team management, and brought a positive spirit and an innovative approach to our work environment. His ability to blend technical skills with strong interpersonal qualities has made him a valuable asset to our team.In conclusion, Maor is a dedicated, technically skilled and versatile team player. His contribution to our company has been significant, and I am confident that he will bring the same level of excellence and innovation to his future endeavors.For more information, please do not hesitate to contact me. Best regards, Sharon Gal-Or Director of Ting Global",
-        phone: '055-9721123',
-        email: 'galorian1@gmail.com',
-        name: "Sharon Gal-or",
+        testimonial: `I am happy to recommend Maor Netzer for any technical position, after his exceptional specialization at Ting Global. Maor quickly mastered Vue.js, Nuxt.js and AWS, significantly improving our web projects and cloud capabilities. His initiative in system development and server automation tools has significantly improved our operational efficiency.
+
+Moreover, Maor excelled in collaboration and team management, and brought a positive spirit and an innovative approach to our work environment. His ability to blend technical skills with strong interpersonal qualities has made him a valuable asset to our team.
+
+In conclusion, Maor is a dedicated, technically skilled and versatile team player. His contribution to our company has been significant, and I am confident that he will bring the same level of excellence and innovation to his future endeavors.`,
+        name: "Sharon Gal-Or",
         designation: "Director",
         company: "Ting Global",
         image: sharonGalOr,

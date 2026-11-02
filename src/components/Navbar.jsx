@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
-          className='flex items-center gap-2'
+          className='flex shrink-0 items-center gap-2 whitespace-nowrap'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -49,7 +49,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden lg:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -63,15 +63,24 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
+        <div className='lg:hidden flex flex-1 justify-end items-center'>
+          <button
+            type='button'
+            aria-label={toggle ? "Close navigation" : "Open navigation"}
+            aria-expanded={toggle}
+            aria-controls='mobile-navigation'
+            className='p-2 -m-2 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white'
+            onClick={() => setToggle((open) => !open)}
+          >
+            <img
+              src={toggle ? close : menu}
+              alt=''
+              className='w-[28px] h-[28px] object-contain'
+            />
+          </button>
 
           <div
+            id='mobile-navigation'
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}

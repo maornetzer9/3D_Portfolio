@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useId, useState } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -11,57 +11,59 @@ const FeedbackCard = ({
   testimonial,
   name,
   designation,
-  phone,
-  email,
   company,
   image,
 }) => {
+  const testimonialId = useId();
+  const paragraphs = testimonial.split("\n\n");
   const [showFullText, setShowFullText] = useState(false);
 
   const toggleText = () => {
-    setShowFullText(!showFullText);
+    setShowFullText((expanded) => !expanded);
   };
 
   return (
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="bg-black-200 p-10 rounded-3xl xl:w-[100%] w-full"
+      className="bg-black-200 p-6 sm:p-10 rounded-3xl xl:w-[100%] w-full"
     >
-      <p className="text-white font-black text-[48px]">"</p>
+      <p aria-hidden="true" className="text-white font-black text-[48px]">&ldquo;</p>
 
       <div className="mt-1">
-        <p className="text-white tracking-wider text-[18px]">
-          {showFullText ? testimonial : `${testimonial.slice(0, 150)}${testimonial.length > 150 ? " ..." : ""}`}
-          {testimonial.length > 150 && (
-            <span
-              className="text-blue-500 cursor-pointer"
-              onClick={toggleText}
-            >
-              {" "}
-              {showFullText ? "Read less" : "Read more"}
-            </span>
-          )}
-        </p>
+        <blockquote id={testimonialId} className="text-white text-[16px] sm:text-[18px] leading-relaxed space-y-5">
+          {(showFullText ? paragraphs : paragraphs.slice(0, 1)).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </blockquote>
+        {paragraphs.length > 1 && (
+          <button
+            type="button"
+            aria-expanded={showFullText}
+            aria-controls={testimonialId}
+            onClick={toggleText}
+            className="mt-3 min-h-[44px] text-sky-300 underline underline-offset-4 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+          >
+            {showFullText ? "Read less" : "Read full recommendation"}
+          </button>
+        )}
 
         <div className="mt-7 flex justify-between items-center gap-1">
           <div className="flex-1 flex flex-col">
             <p className="text-white font-medium text-[16px]">
-              <span className="blue-text-gradient">@</span> {name}
+              {name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">
-              {designation} of {company}
+              {designation}, {company}
             </p>
           </div>
 
           <img
             src={image}
-            alt={`feedback_by-${name}`}
+            alt={`${name}, ${designation} at ${company}`}
             className="w-10 h-10 rounded-full object-cover"
           />
         </div>
-        <p className="mt-1 text-secondary text-[12px]">Phone: {phone}</p>
 
-        <p className="mt-1 text-secondary text-[12px]">Email: {email}</p>
       </div>
     </motion.div>
   );
@@ -74,7 +76,6 @@ const Feedbacks = () => {
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Opinion.</h2>
-          {/* Add any other content you want here */}
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
