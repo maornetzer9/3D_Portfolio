@@ -15,11 +15,18 @@ const FeedbackCard = ({
   image,
 }) => {
   const testimonialId = useId();
-  const paragraphs = testimonial.split("\n\n");
+  const paragraphs = testimonial.split("\n\n").filter((paragraph) => paragraph.trim());
   const [showFullText, setShowFullText] = useState(false);
 
-  const toggleText = () => {
+  const toggleText = (event) => {
+    const button = event.currentTarget;
     setShowFullText((expanded) => !expanded);
+
+    if (showFullText) {
+      requestAnimationFrame(() => {
+        button.scrollIntoView({ block: "nearest", behavior: "instant" });
+      });
+    }
   };
 
   return (
@@ -41,9 +48,23 @@ const FeedbackCard = ({
             aria-expanded={showFullText}
             aria-controls={testimonialId}
             onClick={toggleText}
-            className="mt-3 min-h-[44px] text-sky-300 underline underline-offset-4 rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+            className="mt-4 inline-flex min-h-[44px] scroll-mt-24 items-center gap-2 rounded-lg border border-violet-400/25 bg-violet-400/5 px-3 py-2 text-sm font-medium text-violet-200 hover:border-violet-400/50 hover:bg-violet-400/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-300"
           >
-            {showFullText ? "Read less" : "Read full recommendation"}
+            {showFullText ? "Read less" : "Read more"}
+            <svg
+              aria-hidden="true"
+              className="h-4 w-4"
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            >
+              <path
+                d={showFullText ? "m5 12 5-5 5 5" : "m5 8 5 5 5-5"}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         )}
 

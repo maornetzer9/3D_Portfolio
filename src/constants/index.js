@@ -130,17 +130,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "DevOps Instructor",
-    company_name: "TRTech",
-    icon: backend,
+    title: "Angular Developer",
+    company_name: "Road Protect ",
+    icon: roadProtect,
     iconBg: "#383E56",
-    date: "January 2025 – March 2026",
-    points: [
-      "Delivered hands-on DevOps training in Linux, Python, Docker, Ansible, and AWS.",
-      "Designed practical lessons, technical demonstrations, and infrastructure automation exercises.",
-      "Guided beginner-level students through containerization, cloud infrastructure, Linux administration, and deployment workflows.",
-      "Taught monitoring concepts using Prometheus, Grafana, and related tools.",
-      "Helped students build practical troubleshooting and infrastructure management skills.",
+    date: "Sep 2023 - Nov 2023",
+    points:
+    [
+      "As a FullStack Developer, responsible for backend development, specializing in the design and implementation of RESTful APIs.",
+      "Utilized MockServer and JSON Server for efficient mocking of server-side data, enhancing the comfort of frontend development.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Collaborated closely with the frontend team to ensure seamless integration of mocked data into the user interface.",
     ],
   },
   {
@@ -161,17 +161,17 @@ const experiences = [
     ],
   },
   {
-    title: "Angular Developer",
-    company_name: "Road Protect ",
-    icon: roadProtect,
+    title: "DevOps Instructor",
+    company_name: "TRTech",
+    icon: backend,
     iconBg: "#383E56",
-    date: "Sep 2023 - Nov 2023",
-    points:
-    [
-      "As a FullStack Developer, responsible for backend development, specializing in the design and implementation of RESTful APIs.",
-      "Utilized MockServer and JSON Server for efficient mocking of server-side data, enhancing the comfort of frontend development.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Collaborated closely with the frontend team to ensure seamless integration of mocked data into the user interface.",
+    date: "January 2025 – March 2026",
+    points: [
+      "Delivered hands-on DevOps training in Linux, Python, Docker, Ansible, and AWS.",
+      "Designed practical lessons, technical demonstrations, and infrastructure automation exercises.",
+      "Guided beginner-level students through containerization, cloud infrastructure, Linux administration, and deployment workflows.",
+      "Taught monitoring concepts using Prometheus, Grafana, and related tools.",
+      "Helped students build practical troubleshooting and infrastructure management skills.",
     ],
   },
 ];
